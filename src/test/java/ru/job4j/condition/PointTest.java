@@ -2,11 +2,11 @@ package ru.job4j.condition;
 
 import junit.framework.TestCase;
 import org.junit.Assert;
+import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+public class PointTest{
 
-public class PointTest extends TestCase {
-
+    @Test
     public void testDistance() {
         Point a = new Point(0, 0);
         Point b = new Point(4, 0);
