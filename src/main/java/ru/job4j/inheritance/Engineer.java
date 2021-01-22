@@ -5,10 +5,9 @@ public class Engineer extends Profession {
     private int salary;
 
     public Engineer (String occupation, int salary){
+        super();
         this.occupation = occupation;
         this.salary = salary;
     }
 
-    public Engineer() {
-    }
 }

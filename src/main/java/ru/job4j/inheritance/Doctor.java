@@ -5,10 +5,12 @@ public class Doctor extends Profession {
     private String school;
 
     public Doctor (String country, String school){
+        super();
         this.country = country;
         this.school = school;
     }
 
-    public Doctor() {
+    public Doctor(){
+
     }
 }
