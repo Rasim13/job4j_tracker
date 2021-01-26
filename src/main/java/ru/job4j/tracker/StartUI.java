@@ -25,7 +25,6 @@ public class StartUI {
                     int id = Integer.valueOf(scanner.nextLine());
                     String name = scanner.nextLine();
                     Item newItem = new Item(name);
-                    tracker.replace(id, newItem);
                     if (tracker.replace(id, newItem)) {
                         System.out.println("Замена прошла успешна");
                     } else {
@@ -34,7 +33,6 @@ public class StartUI {
                 } else if (select == 3) {
                     System.out.println("Введите Id: ");
                     int id = Integer.valueOf(scanner.nextLine());
-                    tracker.delete(id);
                     if (tracker.delete(id)) {
                         System.out.println("Id удалена успешна");
                     } else {
