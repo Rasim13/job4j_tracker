@@ -23,11 +23,12 @@ public class StartUITestReplaceItem {
     @Test
     public void WhenDeleteItem() {
         Tracker tracker = new Tracker();
-        Item item = new Item(1);
+        Item item = new Item("new Item");
+        tracker.add(item);
         String[] answers = {
                 String.valueOf(item.getId())};
         StartUI.deleteItem(new StubInput(answers), tracker);
-        boolean deleted = tracker.delete(item.getId());
-        assertThat(deleted, is(false));
+        Item deleted = tracker.findById(item.getId());
+        assertThat(deleted, is(nullValue()));
     }
 }
