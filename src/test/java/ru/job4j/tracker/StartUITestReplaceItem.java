@@ -25,9 +25,9 @@ public class StartUITestReplaceItem {
         Tracker tracker = new Tracker();
         Item item = new Item(1);
         String[] answers = {
-                String.valueOf(item.getId()), null};
+                String.valueOf(item.getId())};
         StartUI.deleteItem(new StubInput(answers), tracker);
         boolean deleted = tracker.delete(item.getId());
-        assertThat(deleted, is(nullValue()));
+        assertThat(deleted, is(false));
     }
 }
