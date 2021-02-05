@@ -5,12 +5,10 @@ public class FindEl {
         int rsl = -1;
         for (int i = 0; i < value.length; i++) {
             if(value[i] == key) {
-                System.out.println(value[i]);
-            } else {
-                throw new ElementNotFoundException("Element is not finded");
+                System.out.println(rsl == i);
             }
         }
-        return rsl;
+        throw new ElementNotFoundException("Element is not finded");
     }
 
     public static void main(String[] args) {
