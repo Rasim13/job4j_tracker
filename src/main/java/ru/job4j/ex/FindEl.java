@@ -5,8 +5,7 @@ public class FindEl {
         int rsl = -1;
         for (int i = 0; i < value.length; i++) {
             if(value[i].equals(key)) {
-                System.out.println(rsl = i);
-                break;
+                return i;
             }
         }
         throw new ElementNotFoundException("Element is not finded");
@@ -15,8 +14,9 @@ public class FindEl {
     public static void main(String[] args) {
         try {
             String[] car = {"Mazda", "BMW","Toyota"};
-            String key = "Mazda";
-            indexOf(car,key);
+            String key = "Vax";
+           int number = indexOf(car,key);
+            System.out.println(number);
         } catch (ElementNotFoundException e) {
             e.printStackTrace();
         }
