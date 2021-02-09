@@ -17,6 +17,7 @@ public class UserStore {
             } else if (user.isValid() == false) {
                 throw new UserInvalidException();
             }
+
         return false;
     }
 
