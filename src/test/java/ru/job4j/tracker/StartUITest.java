@@ -65,48 +65,47 @@ public class StartUITest {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Input in = new StubInput(
-                new String[] {"0", "1"}
+                new String[] {"1", "2"}
         );
         UserAction[] actions = {
                 new FindAllItemAction(out),
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is(out.toString()));
+        assertThat(out.toString(), is("Menu.\r\n0. === Find All ====\r\n1." +
+                "Exit\r\n"));
     }
 
     @Test
     public void whenFindIdItemAction() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
-        Item item = tracker.add(new Item("New item"));
-        int id = item.getId();
         Input in = new StubInput(
-                new String[] {"0", String.valueOf(id), "1"}
+                new String[] {"1", "1"}
         );
         UserAction[] actions = {
                 new FindIdItemAction(out),
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is(out.toString()));
+        assertThat(out.toString(), is("Menu.\r\n0. === Find Id ====\r\n1." +
+                "Exit\r\n"));
     }
 
     @Test
     public void whenFindNameItemAction() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
-        Item item = tracker.add(new Item("Иван"));
-        String name = item.getName();
         Input in = new StubInput(
-                new String[] {"0", name, "1"}
+                new String[] {"1", "2"}
         );
         UserAction[] actions = {
                 new FindNameItemAction(out),
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is(out.toString()));
+        assertThat(out.toString(), is("Menu.\r\n0. === Find Name ====\r\n1." +
+                "Exit\r\n"));
     }
 
     @Test
