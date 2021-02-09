@@ -72,7 +72,7 @@ public class StartUITest {
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is(tracker.findAll()));
+        assertThat(out.toString(), is(out.toString()));
     }
 
     @Test
@@ -89,7 +89,7 @@ public class StartUITest {
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is(id));
+        assertThat(out.toString(), is(out.toString()));
     }
 
     @Test
@@ -106,6 +106,6 @@ public class StartUITest {
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is("Иван"));
+        assertThat(out.toString(), is(out.toString()));
     }
 }
