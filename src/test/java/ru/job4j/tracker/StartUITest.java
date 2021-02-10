@@ -65,7 +65,7 @@ public class StartUITest {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Input in = new StubInput(
-                new String[] {"1", "2"}
+                new String[] {"1"}
         );
         UserAction[] actions = {
                 new FindAllItemAction(out),
@@ -81,7 +81,7 @@ public class StartUITest {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Input in = new StubInput(
-                new String[] {"1", "1"}
+                new String[] {"1"}
         );
         UserAction[] actions = {
                 new FindIdItemAction(out),
@@ -97,7 +97,7 @@ public class StartUITest {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Input in = new StubInput(
-                new String[] {"1", "2"}
+                new String[] {"1"}
         );
         UserAction[] actions = {
                 new FindNameItemAction(out),
