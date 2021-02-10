@@ -3,7 +3,7 @@ package ru.job4j.tracker;
 import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
-import static org.junit.Assert.assertThat;;
+import static org.junit.Assert.assertThat;
 
 public class StartUITest {
 
@@ -73,7 +73,7 @@ public class StartUITest {
         };
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is("Menu.\r\n0. === Find All ====\r\n1." +
-                "Exit\r\n"));
+                " Exit\r\n"));
     }
 
     @Test
@@ -89,7 +89,7 @@ public class StartUITest {
         };
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is("Menu.\r\n0. === Find Id ====\r\n1." +
-                "Exit\r\n"));
+                " Exit\r\n"));
     }
 
     @Test
@@ -105,7 +105,7 @@ public class StartUITest {
         };
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is("Menu.\r\n0. === Find Name ====\r\n1." +
-                "Exit\r\n"));
+                " Exit\r\n"));
     }
 
     @Test
