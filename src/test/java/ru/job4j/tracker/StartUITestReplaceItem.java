@@ -9,7 +9,7 @@ public class StartUITestReplaceItem {
 
     @Test
     public void WhenReplaceItem() {
-        Tracker tracker = new Tracker();
+        Tracker tracker = Tracker.getInstance();
         Item item = new Item("new item");
         tracker.add(item);
         String[] answers = {
@@ -22,7 +22,7 @@ public class StartUITestReplaceItem {
 
     @Test
     public void WhenDeleteItem() {
-        Tracker tracker = new Tracker();
+        Tracker tracker = Tracker.getInstance();
         Item item = new Item("new Item");
         tracker.add(item);
         String[] answers = {

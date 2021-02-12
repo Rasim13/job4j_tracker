@@ -10,7 +10,7 @@ public class TrackerTestDelete {
 
     @Test
     public void delete() {
-        Tracker tracker = new Tracker();
+        Tracker tracker = Tracker.getInstance();
         Item bug = new Item();
         bug.setName("Bug");
         tracker.add(bug);
