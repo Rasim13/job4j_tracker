@@ -7,9 +7,8 @@ public class ConvertList2Array {
         int groups = (int) Math.ceil((double) list.size() / cells);
         int[][] array = new int[groups][cells];
         int index = 0;
-        System.out.println(list.size());
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < groups; i++) {
+            for (int j = 0; j < cells; j++) {
                 if(index >= list.size()){
                     array[i][j] = 0;
                 } else {
