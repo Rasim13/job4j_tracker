@@ -10,15 +10,14 @@ public class PassportOffice {
     public boolean add(Citizen citizen) {
         boolean rsl = false;
         Citizen newCitizen = citizens.get(citizen.getPassport());
-        if (citizens.containsKey(newCitizen) == false) {
+        if (!citizens.containsKey(newCitizen)) {
             citizens.put(citizen.getPassport(), citizen);
             rsl = true;
         }
         return rsl;
     }
 
-
     public Citizen get(String passport) {
-        return null;
+        return citizens.get(passport);
     }
 }
