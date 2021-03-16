@@ -52,9 +52,7 @@ public class JobTest {
     @Test
     public void whenCombComparator() {
         Comparator<Job> comb = new JobDescByName()
-                        .thenComparing(new JobDescByNameIncrease()
-                        .thenComparing(new JobDescByPriority())
-                        .thenComparing(new JobDescByPriorityIncrease()));
+                        .thenComparing(new JobDescByPriority());
         int rsl = comb.compare(
                 new Job("Петр", 2),
                 new Job("Андрей", 1)
