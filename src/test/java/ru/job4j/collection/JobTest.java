@@ -54,7 +54,7 @@ public class JobTest {
         Comparator<Job> comb = new JobDescByName()
                         .thenComparing(new JobDescByPriority());
         int rsl = comb.compare(
-                new Job("Петр", 2),
+                new Job("Андрей", 2),
                 new Job("Андрей", 1)
         );
         assertThat(rsl, lessThan(0));
