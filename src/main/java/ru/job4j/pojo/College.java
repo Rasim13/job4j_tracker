@@ -11,8 +11,8 @@ public class College {
         student.setGroup("group B");
         student.setCreated(new Date());
 
-        System.out.println("Suranme: " + student.getSurname() + "\nName: " + student.getName() +
-                "\nLastName: " + student.getLastName() + "\nGroup: " + student.getGroup() +
-                "\nData of receipt: " + student.getCreated());
+        System.out.println("Suranme: " + student.getSurname() + "\nName: " + student.getName()
+                + "\nLastName: " + student.getLastName() + "\nGroup: " + student.getGroup()
+                + "\nData of receipt: " + student.getCreated());
     }
 }

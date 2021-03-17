@@ -9,9 +9,9 @@ public class MagicBall {
         System.out.print("Прошу вести закрытый вопрос ");
         String name = input.nextLine();
         int answer = new Random().nextInt(3);
-        if(answer == 0) {
+        if (answer == 0) {
             System.out.println("Да");
-        } else if(answer == 1){
+        } else if (answer == 1) {
             System.out.println("Нет");
         } else {
             System.out.println("Может быть");

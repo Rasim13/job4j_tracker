@@ -15,7 +15,7 @@ public class IdSorter {
         System.out.println(items);
         Collections.sort(items);
         System.out.println(items);
-        Collections.sort(items,new SortByIdItem());
+        Collections.sort(items, new SortByIdItem());
         System.out.println(items);
     }
 }

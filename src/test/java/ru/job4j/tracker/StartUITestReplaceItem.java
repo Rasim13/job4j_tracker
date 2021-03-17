@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.nullValue;
 public class StartUITestReplaceItem {
 
     @Test
-    public void WhenReplaceItem() {
+    public void whenReplaceItem() {
         Tracker tracker = Tracker.getInstance();
         Item item = new Item("new item");
         tracker.add(item);
@@ -21,7 +21,7 @@ public class StartUITestReplaceItem {
     }
 
     @Test
-    public void WhenDeleteItem() {
+    public void whenDeleteItem() {
         Tracker tracker = Tracker.getInstance();
         Item item = new Item("new Item");
         tracker.add(item);

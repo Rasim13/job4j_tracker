@@ -2,7 +2,7 @@ package ru.job4j.ex;
 
 public class Fact {
     public static int calc(int n) {
-        if(n < 0) {
+        if (n < 0) {
             throw new IllegalArgumentException("Number n less 0");
         }
         int rsl = 1;

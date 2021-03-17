@@ -13,7 +13,7 @@ public class Library {
         numberOf[2] = physics;
         numberOf[3] = chemistry;
         numberOf[4] = book;
-        for (int index = 0; index < numberOf.length; index++){
+        for (int index = 0; index < numberOf.length; index++) {
             Book bk = numberOf[index];
             System.out.println(bk.getName() + " - " + bk.getNumber());
         }
@@ -21,7 +21,7 @@ public class Library {
         Book tmp = numberOf[0];
         numberOf[0] = numberOf[3];
         numberOf[3] = tmp;
-        for (int index = 0; index < numberOf.length; index++){
+        for (int index = 0; index < numberOf.length; index++) {
             Book bk = numberOf[index];
             System.out.println(bk.getName() + " - " + bk.getNumber());
         }

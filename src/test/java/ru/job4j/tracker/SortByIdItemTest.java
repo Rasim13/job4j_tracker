@@ -22,7 +22,7 @@ public class SortByIdItemTest {
                 new Item(2, "Алексей"),
                 new Item(4, "Илья")
         );
-        Assert.assertEquals("Test fail",expected, items);
+        Assert.assertEquals("Test fail", expected, items);
     }
 
     @Test
@@ -38,6 +38,6 @@ public class SortByIdItemTest {
                 new Item(2, "Алексей"),
                 new Item(1, "Петр")
         );
-        Assert.assertEquals("Test fail",expected, items);
+        Assert.assertEquals("Test fail", expected, items);
     }
 }

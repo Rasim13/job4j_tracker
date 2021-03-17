@@ -8,7 +8,7 @@ public class Reduce {
     }
 
     public void to(int[] array) {
-        for(int index = 0; index < array.length; index++){
+        for (int index = 0; index < array.length; index++) {
             index = array[index];
         }
     }

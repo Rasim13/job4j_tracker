@@ -31,7 +31,7 @@ public class StartUITest {
         int id = item.getId();
         String replacedName = "New item name";
         Input in = new StubInput(
-                new String[] {"0", String.valueOf(id),replacedName, "1"}
+                new String[] {"0", String.valueOf(id), replacedName, "1"}
         );
         UserAction[] actions = {
                 new ReplaceAction(out),
@@ -72,8 +72,8 @@ public class StartUITest {
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is("Menu.\r\n0. === Find All ====\r\n1." +
-                " Exit\r\n"));
+        assertThat(out.toString(), is("Menu.\r\n0. === Find All ====\r\n1."
+                + " Exit\r\n"));
     }
 
     @Test
@@ -88,8 +88,8 @@ public class StartUITest {
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is("Menu.\r\n0. === Find Id ====\r\n1." +
-                " Exit\r\n"));
+        assertThat(out.toString(), is("Menu.\r\n0. === Find Id ====\r\n1."
+                + " Exit\r\n"));
     }
 
     @Test
@@ -104,8 +104,8 @@ public class StartUITest {
                 new Exit()
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is("Menu.\r\n0. === Find Name ====\r\n1." +
-                " Exit\r\n"));
+        assertThat(out.toString(), is("Menu.\r\n0. === Find Name ====\r\n1."
+                + " Exit\r\n"));
     }
 
     @Test

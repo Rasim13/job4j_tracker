@@ -10,7 +10,7 @@ public final class Airbus extends Aircraft {
         this.name = name;
     }
 
-    public Airbus(String name,int countEngine) {
+    public Airbus(String name, int countEngine) {
         this.name = name;
         this.countEngine = countEngine;
     }
