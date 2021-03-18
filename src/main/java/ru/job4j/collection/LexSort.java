@@ -5,7 +5,7 @@ import java.util.Comparator;
 public class LexSort implements Comparator<String> {
     @Override
     public int compare(String left, String right) {
-        return extractNumber(left) - extractNumber(right);
+        return Integer.compare(extractNumber(left), extractNumber(right));
     }
 
     public int extractNumber(String s){
