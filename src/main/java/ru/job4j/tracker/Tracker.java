@@ -39,7 +39,7 @@ public final class Tracker {
 //    }
 
     public List<Item> findAll() {
-        return items;
+        return List.copyOf(items);
     }
 
 //    public Item[] findByName(String key) {
@@ -62,7 +62,7 @@ public final class Tracker {
                 rsl.add(it);
             }
         }
-        return rsl;
+        return List.copyOf(rsl);
     }
 
     public boolean replace(int id, Item item) {
