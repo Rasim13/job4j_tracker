@@ -8,7 +8,7 @@ public class LexSort implements Comparator<String> {
         return Integer.compare(extractNumber(left), extractNumber(right));
     }
 
-    public int extractNumber(String s){
+    public int extractNumber(String s) {
         String num = s.replaceAll("\\D", "");
         return num.isEmpty() ? 0 : Integer.parseInt(num);
     }
