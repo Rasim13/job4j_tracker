@@ -55,7 +55,7 @@ public final class Tracker {
 //        return Arrays.copyOf(namesSimilar, count);
 //    }
 
-    public List<Item> findByName(String key){
+    public List<Item> findByName(String key) {
         List<Item> rsl = new ArrayList<>();
         for (Item it : items) {
             if (it.getName().contains(key)) {

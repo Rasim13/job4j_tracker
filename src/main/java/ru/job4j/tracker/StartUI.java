@@ -10,7 +10,7 @@ public class StartUI {
         this.out = out;
     }
 
-    public void init(Input input, Tracker tracker, List<UserAction> actions){
+    public void init(Input input, Tracker tracker, List<UserAction> actions) {
     //public void init(Input input, Tracker tracker, UserAction[] actions) {
         boolean run = true;
         while (run) {
