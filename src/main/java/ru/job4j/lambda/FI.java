@@ -25,6 +25,5 @@ public class FI {
         Comparator<Attachment> comparator3 = (left, right) -> Integer.compare(right.getSize(), left.getSize());
         Arrays.sort(atts, comparator3);
         System.out.println(Arrays.asList(atts));
-
     }
 }
