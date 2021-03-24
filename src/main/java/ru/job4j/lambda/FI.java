@@ -22,7 +22,7 @@ public class FI {
         System.out.println(Arrays.asList(atts));
 
         //сортировка строк по убыванию длины
-        Comparator<Attachment> comparator3 = (left, right) -> (right.getSize() - left.getSize());
+        Comparator<Attachment> comparator3 = (left, right) -> Integer.compare(right.getSize(), left.getSize());
         Arrays.sort(atts, comparator3);
         System.out.println(Arrays.asList(atts));
 
