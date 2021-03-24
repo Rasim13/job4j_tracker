@@ -12,7 +12,7 @@ public class FI {
         };
 
         //сортировка по полю size
-        Comparator<Attachment> comparator = (left, right) -> left.getSize() - right.getSize();
+        Comparator<Attachment> comparator = (left, right) -> Integer.compare(left.getSize(), right.getSize());
         Arrays.sort(atts, comparator);
         System.out.println(Arrays.asList(atts));
 
