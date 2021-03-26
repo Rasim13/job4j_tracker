@@ -11,16 +11,32 @@ public class ProfilesTest {
     public void whenCollect() {
         Profiles prof = new Profiles();
         List<Address> addresses = prof.collect( List.of(
-                new Profile(new Address("Москва", "Пушкина", 5, 56)),
-                new Profile(new Address("Тюмень", "Юго - западная", 12, 23)),
                 new Profile(new Address("Сочи", "Некрасова", 45, 12)),
-                new Profile(new Address("Калуга", "Невская", 10, 25))
+                new Profile(new Address("Москва", "Пушкина", 5, 56)),
+                new Profile(new Address("Тюмень", "Юго - западная", 12, 23))
         ));
         List<Address> expected = List.of(
                 new Address("Москва", "Пушкина", 5, 56),
-                new Address("Тюмень", "Юго - западная", 12, 23),
                 new Address("Сочи", "Некрасова", 45, 12),
-                new Address("Калуга", "Невская", 10, 25)
+                new Address("Тюмень", "Юго - западная", 12, 23)
+        );
+        assertThat(addresses, is(expected));
+    }
+
+    @Test
+    public void whenCollectSortedAndDistinct() {
+        Profiles prof = new Profiles();
+        List<Address> addresses = prof.collect(List.of(
+                new Profile(new Address("Сочи", "Некрасова", 45, 12)),
+                new Profile(new Address("Сочи", "Некрасова", 45, 12)),
+                new Profile(new Address("Москва", "Пушкина", 5, 56)),
+                new Profile(new Address("Тюмень", "Юго - западная", 12, 23)),
+                new Profile(new Address("Москва", "Пушкина", 5, 56))
+        ));
+        List<Address> expected = List.of(
+                new Address("Москва", "Пушкина", 5, 56),
+                new Address("Сочи", "Некрасова", 45, 12),
+                new Address("Тюмень", "Юго - западная", 12, 23)
         );
         assertThat(addresses, is(expected));
     }
