@@ -49,16 +49,17 @@ public class Car {
             return car;
         }
 
-        @Override
-        public String toString() {
-            return "Car{" +
-                    "model='" + model + '\'' +
-                    ", maxSpeed=" + maxSpeed +
-                    ", price=" + price +
-                    ", city='" + city + '\'' +
-                    ", power=" + power +
-                    '}';
-        }
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", price=" + price +
+                ", city='" + city + '\'' +
+                ", power=" + power +
+                '}';
     }
 
     public static void main(String[] args) {
